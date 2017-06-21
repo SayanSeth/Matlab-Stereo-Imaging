@@ -58,6 +58,7 @@ for i = 1:20
      end
      
      % Comapring the Areas of Dtected object in Left Frame
+     
      for object=1:n1
          ba1(1,object)=stats1(object).Area;
      end
@@ -66,7 +67,8 @@ for i = 1:20
     
          bb1=stats1(m).BoundingBox;
          bc1=stats1(m).Centroid;
-      % Comapring the Areas of Dtected object in Left Frame
+      
+      % Comapring the Areas of Dtected object in Right Frame
       
       for object=1:n2
          ba2(1,object)=stats2(object).Area;
@@ -103,9 +105,3 @@ end
     clc;
     clear;
     close all;
-    
-    
-    
-    
-    
-   
